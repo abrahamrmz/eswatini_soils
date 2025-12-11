@@ -39,12 +39,12 @@ pip install pandas numpy openpyxl
 ```
 proyecto/
 │
-├── script_hwsd2_to_pyaez.py          # Script principal
+├── eswatini_pyaez_suelos.py          # Script principal
 ├── README.md                          # Este archivo
 ├── HWSD2.db                          # Base de datos HWSD2
 │
 └── outputs/                          # Archivos generados
-    └── eswatini_soil_ALL_LAYERS_pyaez_CORRECTED.xlsx
+    └── eswatini_soil_ALL_LAYERS_pyaez.xlsx
 ```
 
 ---
@@ -53,7 +53,7 @@ proyecto/
 
 ### Ejecución básica:
 ```bash
-python script_hwsd2_to_pyaez.py
+python eswatini_pyaez_suelos.py
 ```
 
 ### Modificar región de estudio:
@@ -75,7 +75,7 @@ WHERE -- tus condiciones de filtrado
 ## 📊 Salida del Script
 
 ### Archivo generado:
-**`eswatini_soil_ALL_LAYERS_pyaez_CORRECTED.xlsx`**
+**`eswatini_soil_ALL_LAYERS_pyaez.xlsx`**
 
 Contiene todas las capas D1-D7 en un solo archivo con las siguientes columnas:
 
@@ -300,21 +300,3 @@ Para problemas relacionados con:
 - **Script**: Revisar código fuente y comentarios internos
 
 ---
-
-## 📌 Versión
-
-**v1.0.0** - Diciembre 2024
-- Implementación inicial con todas las correcciones
-- Soporte para 7 capas de profundidad
-- Validaciones automáticas
-- Documentación completa
-
----
-
-## ✨ Próximas Mejoras
-
-- [ ] Soporte para múltiples regiones en un solo run
-- [ ] Exportar también a formato CSV
-- [ ] Visualizaciones automáticas de distribuciones
-- [ ] Integración directa con PyAEZ
-- [ ] Validación contra datos de campo (si disponibles)
